@@ -1,6 +1,29 @@
-<p>
-  공통 메뉴: home, jquery, angular
-</p>
+<mat-toolbar color="primary">
+  <span>Angular5</span>
 
----------router-outlet ▼
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/jquery">
+      <mat-icon>input</mat-icon>
+      <span>jquery</span>
+    </button>
+    <button mat-menu-item routerLink="/angular">
+      <mat-icon>input</mat-icon>
+      <span>angular</span>
+    </button>
+    <button mat-menu-item >
+      <mat-icon>input</mat-icon>
+      <span>http</span>
+    </button>
+    <button mat-menu-item >
+      <mat-icon>input</mat-icon>
+      <span>news</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <router-outlet></router-outlet>

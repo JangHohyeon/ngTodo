@@ -8,6 +8,8 @@ import { JqueryComponent } from './jquery/jquery.component';
 import { AngularComponent } from './angular/angular.component';
 
 import { AppRoutingModule } from './/app-routing.module';
+import {MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule} from "@angular/material";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -19,7 +21,12 @@ import { AppRoutingModule } from './/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

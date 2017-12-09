@@ -12,7 +12,9 @@ const routes: Routes = [
     { path: '', component: HomeComponent},
     { path: 'jquery', component: JqueryComponent},
     { path: 'angular', component: AngularComponent}
-  ]}
+  ]},
+  // 참고: 향후 관리자 생성 모듈(loading - lazy)
+  { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule'}
 ];
 
 @NgModule({
