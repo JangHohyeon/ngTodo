@@ -6,7 +6,8 @@ import { IndexComponent } from './index/index.component';
 import { HomeComponent } from './home/home.component';
 import { JqueryComponent } from './jquery/jquery.component';
 import { AngularComponent } from './angular/angular.component';
-import { AppRoutiongModule } from './/app-routiong.module';
+
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { AppRoutiongModule } from './/app-routiong.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutiongModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
