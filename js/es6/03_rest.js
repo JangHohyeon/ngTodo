@@ -11,7 +11,7 @@ console.log(sortRestArgs(5,3,1));
 function sortArguments() {
     // arguments는 무엇인가?
     console.log(arguments);
-    var sortedArgs = arguments.sort();
+    var sortedArgs = arguments.sort(); //error
     return sortedArgs;
 }
 

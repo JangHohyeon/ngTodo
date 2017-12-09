@@ -12,15 +12,15 @@
         this.age++;
         console.log(this.age);
     }, 1000);
-}
+}*/
 
-var p = new Person();*/
-
+//var p = new Person();
+////////////////////////////////////////
 function Person(){
     this.age = 0;
 
     setInterval(() => {
-        this.age++; // |this| 는 정확히 person 객체를 참조
+        this.age++; // |this| 는 정확히 person 객체를 참조(lexical this)
         console.log(this.age);
     }, 1000);
 }
